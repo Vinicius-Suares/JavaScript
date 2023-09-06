@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Módulo C</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
 </head>
 <body>
+    <h1>iniciando estudos de DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprenda a usar o <strong>DOM</strong> aqui </p>
+    <div name="msg" id="imsg">Clique em mim</div>
     <script>
-        
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var b = window.document.getElementById('imsg')
+        /*var c = window.document.getElementsByName('msg')
+        c.style.background = 'blue'*/
+
+        var d = window.document.querySelector('div#imsg')
     </script>
 </body>
 </html>
