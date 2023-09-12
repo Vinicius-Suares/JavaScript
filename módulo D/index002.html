@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+    <h1>De que País você é??</h1>
+    <form action="get">
+        <input type="text" name="pais" id="pais">
+        <input type="button" value="Verificar" onclick="envio()">
+    </form>
+    <div id="res"></div>
+    <script>
+        
+        function envio() {
+        var pai = window.document.getElementById('pais')
+        var paix = pai.value
+        var res = window.document.getElementById('res')
+        res.innerHTML = `Você é de ${paix}`
+            if (paix == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>BR HUEHUE</strong></p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+                res.innerHTML += `<p>Seja bem vindo ao nosso país</p>`
+            }
+    }
+    </script>
+</body>
+</html>
