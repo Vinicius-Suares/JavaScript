@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(85, 85, 190);
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+}
+
+section {
+    background-color: white;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.527);
+    position: relative;
+}
+section img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 300px;
+}
+section div#msg {
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+
+footer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.336);
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+footer p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}

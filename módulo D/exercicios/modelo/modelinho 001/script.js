@@ -9,7 +9,7 @@ function carregar() {
         //DIA
         img.src = 'cedo.png'
         document.body.style.background = '#e4a266'
-    } else if ( hora >= 12 && hora < 18){
+    } else if ( hora >= 12 && hora < 18) {
         //TARDE
         img.src = 'tarde.png'
         document.body.style.background = '#435051'
@@ -17,6 +17,5 @@ function carregar() {
         //NOITE
         img.src = 'noite.png'
         document.body.style.background = '#297184'
-        
     }
 }
