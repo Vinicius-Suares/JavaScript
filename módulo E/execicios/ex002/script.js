@@ -1,15 +1,18 @@
 function tabuada() {
-    var numero = document.getElementById('txtnum')
-    var res = document.getElementById('res')
-    var tabuada = 1
-    if (tabuada.value.length == 0 ) {
-        window.alert('[ERRO] Faltam dados!')
-    } else {
-        var n = Number(numero.value)
-        var resultado = n * tabuada
-        while (tabuada <= 10) {
-            res.innerHTML += `${n} x ${tabuada} = ${resultado}`
-            tabuada++
-        }
+    let num = document.getElementById('txtnum')
+    let tab = document.getElementById('seltab')
+    if (num.value.length != 0){
+    let n = Number(num.value)
+    let c = 1
+    tab.innerHTML = ' '
+    while (c <= 10) {
+        let item = document.createElement('option')
+        item.text = `${n} x ${c} = ${n*c}`
+        item.value = `tab${c}`
+        tab.appendChild(item)
+        c++
     }
+} else {
+    window.alert('[ERRO] Insira um número')
+}
 }
