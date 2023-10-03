@@ -9,7 +9,7 @@ function calc() {
         var n = Number(numero.value)
         var m = Number(multpli.value)
         lista.innerHTML += `${n} x ${m} = ${n*m}`
-        m ++
+        m++
     }
     }
 }
