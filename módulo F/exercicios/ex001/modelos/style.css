@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(107, 134, 223);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+section {
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+}
+
+select {
+    width: 200px;
+}
+
+div#resultado {
+    background-color: rgb(196, 196, 196);
+    border-radius: 10px;
+    margin: 10px;
+    padding:10px;
+}
